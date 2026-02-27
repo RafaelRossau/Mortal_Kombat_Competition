@@ -1,0 +1,24 @@
+{
+  "name": "mortal_kombat_competition",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelRossau/Mortal_Kombat_Competition.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelRossau/Mortal_Kombat_Competition/issues"
+  },
+  "homepage": "https://github.com/RafaelRossau/Mortal_Kombat_Competition#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.18.2"
+  }
+}
