@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create character</title>
+    <link rel="stylesheet" href="mkc.css">
+</head>
+<body style="background-color: black;">
+    <img src="img/MK_2011_2ndlogo.webp" alt="" id="mk_logo_character_creation" style="margin-left: 650px;">
+    <div id="dad_div2">
+        <fieldset id="form" style="background-color: white; display: block;">
+            <h1>Create your character!</h1>
+            <label for="create_name">Name:</label>
+            <input type="text" id="create_name">
+
+            <details id="create_type">
+                <summary>Type</summary>
+                <label><input type="checkbox" value="fire">fire</label>
+                <label><input type="checkbox" value="water">water</label>
+                <label><input type="checkbox" value="wind">wind</label>
+                <label><input type="checkbox" value="poison">poison</label>
+            </details>
+            <label for="create_attack">Attack:</label>
+            <input type="number" id="create_attack"><br>
+
+            <button onclick="createCharacter()">Send</button>
+
+        </fieldset>
+
+    </div>
+</body>
+<script src="mkc.js"></script>
+</html>
