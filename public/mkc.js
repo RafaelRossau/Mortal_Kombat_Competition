@@ -1,4 +1,13 @@
 const url = `http://localhost:3000/characters`
+let win1 = false
+let win2 = false
+let win3 = false
+let win4 = false
+
+let win5 = false
+let win6 = false
+let win7 = false
+let win8 = false
 
 function createCharacter(){
     const checked = (idContainer) => {
@@ -105,9 +114,9 @@ function randomCharacters(){
             return randomCharacters();
         }
 
-        document.getElementById("name9").innerHTML = x7.character_name
-        document.getElementById("type9").innerHTML = x7.character_type
-        document.getElementById("attack9").innerHTML = x7.attack
+        document.getElementById("name11").innerHTML = x7.character_name
+        document.getElementById("type11").innerHTML = x7.character_type
+        document.getElementById("attack11").innerHTML = x7.attack
 
         const randomindex8 = Math.floor(Math.random() * characters.length);
         const x8 = characters[randomindex8]
@@ -122,4 +131,161 @@ function randomCharacters(){
 }
 if (window.location.pathname.includes("mkc.html")) {
     window.onload = randomCharacters;
+}
+function startCompetition(){
+    const character1_name = document.getElementById("name1").innerHTML
+    const character1_type = document.getElementById("type1").innerHTML
+    const character1_attack = document.getElementById("attack1").innerHTML
+
+    const character2_name = document.getElementById("name2").innerHTML
+    const character2_type = document.getElementById("type2").innerHTML
+    const character2_attack = document.getElementById("attack2").innerHTML
+
+    const character3_name = document.getElementById("name4").innerHTML
+    const character3_type = document.getElementById("type4").innerHTML
+    const character3_attack = document.getElementById("attack4").innerHTML
+
+    const character4_name = document.getElementById("name5").innerHTML
+    const character4_type = document.getElementById("type5").innerHTML
+    const character4_attack = document.getElementById("attack5").innerHTML
+
+    const character5_name = document.getElementById("name7").innerHTML
+    const character5_type = document.getElementById("type7").innerHTML
+    const character5_attack = document.getElementById("attack7").innerHTML
+
+    const character6_name = document.getElementById("name8").innerHTML
+    const character6_type = document.getElementById("type8").innerHTML
+    const character6_attack = document.getElementById("attack8").innerHTML
+
+    const character7_name = document.getElementById("name10").innerHTML
+    const character7_type = document.getElementById("type10").innerHTML
+    const character7_attack = document.getElementById("attack10").innerHTML
+
+    const character8_name = document.getElementById("name11").innerHTML
+    const character8_type = document.getElementById("type11").innerHTML
+    const character8_attack = document.getElementById("attack11").innerHTML
+
+const random1 = Math.floor(Math.random() * 2)
+if(random1 == 1){
+   document.getElementById("name3").innerHTML = character1_name
+   document.getElementById("type3").innerHTML = character1_type
+   document.getElementById("attack3").innerHTML = character1_attack
+   win1 = true
+}
+else{
+   document.getElementById("name3").innerHTML = character2_name
+   document.getElementById("type3").innerHTML = character2_type
+   document.getElementById("attack3").innerHTML = character2_attack
+   win1 = false
+}
+const random2 = Math.floor(Math.random() * 2)
+if(random2 == 1){
+   document.getElementById("name6").innerHTML = character3_name
+   document.getElementById("type6").innerHTML = character3_type
+   document.getElementById("attack6").innerHTML = character3_attack
+   win2 = true
+}
+else{
+   document.getElementById("name6").innerHTML = character4_name
+   document.getElementById("type6").innerHTML = character4_type
+   document.getElementById("attack6").innerHTML = character4_attack
+   win2 = false
+}
+const random3 = Math.floor(Math.random() * 2)
+if(random3 == 1){
+   document.getElementById("name9").innerHTML = character5_name
+   document.getElementById("type9").innerHTML = character5_type
+   document.getElementById("attack9").innerHTML = character5_attack
+   win3 = true
+}
+else{
+   document.getElementById("name9").innerHTML = character6_name
+   document.getElementById("type9").innerHTML = character6_type
+   document.getElementById("attack9").innerHTML = character6_attack
+   win3 = false
+}
+const random4 = Math.floor(Math.random() * 2)
+if(random4 == 1){
+   document.getElementById("name12").innerHTML = character7_name
+   document.getElementById("type12").innerHTML = character7_type
+   document.getElementById("attack12").innerHTML = character7_attack
+   win4 = true
+}
+else{
+   document.getElementById("name12").innerHTML = character8_name
+   document.getElementById("type12").innerHTML = character8_type
+   document.getElementById("attack12").innerHTML = character8_attack
+   win4 = false
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////
+if(win1 == true){
+   document.getElementById("name13").innerHTML = character1_name
+   document.getElementById("type13").innerHTML = character1_type
+   document.getElementById("attack13").innerHTML = character1_attack
+}
+else{
+   document.getElementById("name13").innerHTML = character2_name
+   document.getElementById("type13").innerHTML = character2_type
+   document.getElementById("attack13").innerHTML = character2_attack
+   
+}
+if(win2 == true){
+    document.getElementById("name13").innerHTML = character3_name
+   document.getElementById("type13").innerHTML = character3_type
+   document.getElementById("attack13").innerHTML = character3_attack
+   
+}
+else{
+    document.getElementById("name13").innerHTML = character4_name
+   document.getElementById("type13").innerHTML = character4_type
+   document.getElementById("attack13").innerHTML = character4_attack
+   
+}
+if(win3 == true){
+    document.getElementById("name14").innerHTML = character5_name
+   document.getElementById("type14").innerHTML = character5_type
+   document.getElementById("attack14").innerHTML = character5_attack
+   
+}
+else{
+    document.getElementById("name14").innerHTML = character6_name
+   document.getElementById("type14").innerHTML = character6_type
+   document.getElementById("attack14").innerHTML = character6_attack
+   
+}
+if(win4 == true){
+    document.getElementById("name14").innerHTML = character7_name
+   document.getElementById("type14").innerHTML = character7_type
+   document.getElementById("attack14").innerHTML = character7_attack
+   
+}
+else{
+    document.getElementById("name14").innerHTML = character8_name
+   document.getElementById("type14").innerHTML = character8_type
+   document.getElementById("attack14").innerHTML = character8_attack
+}
+////////////////////////////////////////////////////////////////////////////////////
+const name1_2 = document.getElementById("name13").innerHTML
+const type1_2 = document.getElementById("type13").innerHTML
+const attack1_2 = document.getElementById("attack13").innerHTML
+
+const name2_2 = document.getElementById("name14").innerHTML
+const type2_2 = document.getElementById("type14").innerHTML
+const attack2_2 = document.getElementById("attack14").innerHTML
+
+const random5 = Math.floor(Math.random() * 2)
+if(random5 == 1){
+    document.getElementById("name15").innerHTML = name1_2
+    document.getElementById("type15").innerHTML = type1_2
+    document.getElementById("attack15").innerHTML = attack1_2
+}
+else{
+    document.getElementById("name15").innerHTML = name2_2
+    document.getElementById("type15").innerHTML = type2_2
+    document.getElementById("attack15").innerHTML = attack2_2
+}
+alert(`${document.getElementById("name15").innerHTML} wins!`)
+
+
+
 }
