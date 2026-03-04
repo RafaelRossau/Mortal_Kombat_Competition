@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="mkc.css">
 </head>
 <body style="background-color: rgb(7, 7, 7);">
-   
+   <audio autoplay loop id="audio_title" src="img/mk_title.mp3"></audio>
+   <button onclick="autoplay_title()" style="background-image: url('img/Speaker_Icon.svg'); width:50px;height: 50px; background-size: cover; position: fixed; top:5px"></button>
     <img src="img/MK_2011_2ndlogo.webp" alt="" id="title_img">
 
-    <button onclick="location.href='mkc.html';" id="competition_menu">Competition</button>
+    <button onclick="location.href='mkc.html'; autoplay_audio()" id="competition_menu">Competition</button>
     <button onclick="location.href='create_character.html'" id="btn_create_character">Create character</button>
    
     <script src="mkc.js"></script>

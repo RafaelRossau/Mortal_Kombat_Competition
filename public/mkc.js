@@ -285,7 +285,12 @@ else{
     document.getElementById("attack15").innerHTML = attack2_2
 }
 alert(`${document.getElementById("name15").innerHTML} wins!`)
-
-
-
+}
+function autoplay_audio(){
+   const autoplay = document.getElementById("audio_competition")
+autoplay.play()
+}
+function autoplay_title(){
+    const autoplay = document.getElementById("audio_title")
+    autoplay.play()
 }
