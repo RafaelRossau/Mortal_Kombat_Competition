@@ -1,86 +1,91 @@
+Aqui está o conteúdo do seu README.md traduzido para o inglês, mantendo a estrutura e o estilo que definimos anteriormente:
+
 🐉 Mortal Kombat Competition
-Uma aplicação web completa (Full Stack) inspirada na franquia Mortal Kombat, onde os usuários podem registrar seus próprios lutadores em um banco de dados e vê-los competir em um torneio de chaves gerado aleatoriamente.
+A full-stack web application inspired by the Mortal Kombat franchise, where users can register their own fighters in a database and watch them compete in a randomly generated tournament bracket.
 
-📋 Sobre o Projeto
-O projeto simula um torneio de artes marciais místicas. Ele utiliza Node.js com Express no backend para gerenciar a API e a comunicação com o banco de dados MySQL. A interface frontal (Frontend) permite a criação de personagens e a visualização dinâmica do torneio.
+📋 About the Project
+This project simulates a mystical martial arts tournament. It uses Node.js with Express on the backend to manage the API and communication with a MySQL database. The frontend interface allows for character creation and dynamic visualization of the tournament progress.
 
-Como funciona:
-Criação: O usuário define nome, tipo (elemento) e poder de ataque do personagem.
+How it works:
+Creation: The user defines the name, type (element), and attack power of the character.
 
-Persistência: Os dados são salvos em um banco de dados relacional.
+Persistence: Data is saved in a relational database.
 
-Torneio: O sistema seleciona 8 lutadores aleatórios do banco de dados para preencher as chaves.
+Tournament: The system selects 8 random fighters from the database to fill the brackets.
 
-Combate: Através de lógica JavaScript, os vencedores avançam de fase até que um grande campeão seja coroado.
+Combat: Using JavaScript logic, winners advance through stages until a grand champion is crowned.
 
-🛠️ Tecnologias Utilizadas
+🛠️ Technologies Used
 Frontend
-HTML5 & CSS3: Estrutura e estilização (incluindo posicionamento fixo para as chaves do torneio).
+HTML5 & CSS3: Structure and styling (including fixed positioning for the tournament brackets).
 
-JavaScript (Vanilla): Lógica de sorteio, manipulação de DOM e consumo da API via fetch.
+JavaScript (Vanilla): Randomization logic, DOM manipulation, and API consumption via fetch.
 
 Backend
-Node.js: Ambiente de execução.
+Node.js: Runtime environment.
 
-Express: Framework para criação da API e servidor de arquivos estáticos.
+Express: Framework for API creation and static file serving.
 
-MySQL2: Driver de conexão com o banco de dados.
+MySQL2: Connection driver for the database.
 
-Banco de Dados
-MySQL: Armazenamento dos personagens com restrições de tipos (fire, water, wind, poison).
+Database
+MySQL: Character storage with type constraints (fire, water, wind, poison).
 
-🗄️ Estrutura do Banco de Dados
-A tabela principal é definida da seguinte forma:
+🗄️ Database Structure
+The main table is defined as follows:
 
 SQL
+CREATE DATABASE MK_Competition;
+USE MK_Competition;
+
 CREATE TABLE characters (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     character_name VARCHAR(50) NOT NULL,
     character_type VARCHAR(20) CHECK (character_type IN ('fire','water','wind','poison')),
     attack INT NOT NULL
 );
-🚀 Como Executar
-Pré-requisitos
-Node.js instalado.
+🚀 How to Run
+Prerequisites
+Node.js installed.
 
-Servidor MySQL (como XAMPP ou WampServer).
+MySQL Server (such as XAMPP or WampServer).
 
-Passo a Passo
-Configurar o Banco:
+Step by Step
+Set up the Database:
 
-Execute o script MK_competition_DATABASE.sql no seu console MySQL ou PHPMyAdmin.
+Run the MK_competition_DATABASE.sql script in your MySQL console or PHPMyAdmin.
 
-Instalar Dependências:
+Install Dependencies:
 
 Bash
 npm install express mysql2
-Iniciar o Servidor:
+Start the Server:
 
 Bash
 node server.js
-Acessar:
-Abra o navegador em http://localhost:3000/mkc_title.html.
+Access the App:
+Open your browser at http://localhost:3000/mkc_title.html.
 
-🕹️ Funcionalidades Detalhadas
-Validação de Formulário: O sistema impede nomes vazios, nomes acima de 50 caracteres e garante que exatamente um tipo elemental seja selecionado.
+🕹️ Detailed Features
+Form Validation: The system prevents empty names, names exceeding 50 characters, and ensures exactly one elemental type is selected.
 
-Sorteio Inteligente: A função randomCharacters() garante que o mesmo personagem não seja sorteado duas vezes para o mesmo torneio.
+Smart Randomization: The randomCharacters() function ensures that the same character is not drawn twice for the same tournament.
 
-Trilha Sonora: Sistema de autoplay para músicas temáticas de MK durante a navegação e o torneio.
+Soundtrack: Autoplay system for thematic MK music during navigation and the tournament.
 
-Lógica de Torneio: O botão "Start Competition" processa as vitórias e move os dados dos vencedores para as próximas chaves (#character13, #character14, etc.) até a final.
+Tournament Logic: The "Start Competition" button processes victories and moves the winners' data to the next brackets until the final.
 
-📁 Estrutura de Arquivos
-server.js: Servidor Express e rotas da API (GET e POST).
+📁 File Structure
+server.js: Express server and API routes (GET and POST).
 
-mkc.js: Toda a inteligência do lado do cliente (fetch, random, torneio).
+mkc.js: All client-side intelligence (fetch, random, tournament logic).
 
-mkc.css: Estilização visual e layout das chaves de luta.
+mkc.css: Visual styling and layout for the fight brackets.
 
-create_character.html: Interface de cadastro.
+create_character.html: Character registration interface.
 
-mkc.html: A arena do torneio.
+mkc.html: The tournament arena.
 
-Nota: Este projeto foi desenvolvido para fins de estudo sobre integração de banco de dados e manipulação dinâmica de elementos via JavaScript.
+Note: This project was developed for educational purposes to study database integration and dynamic element manipulation via JavaScript.
 
-Prepare-se para o combate! ⚔️
+Prepare for battle! ⚔️
