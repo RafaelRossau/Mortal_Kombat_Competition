@@ -1,5 +1,3 @@
-Aqui está o conteúdo do seu README.md traduzido para o inglês, mantendo a estrutura e o estilo que definimos anteriormente:
-
 🐉 Mortal Kombat Competition
 A full-stack web application inspired by the Mortal Kombat franchise, where users can register their own fighters in a database and watch them compete in a randomly generated tournament bracket.
 
